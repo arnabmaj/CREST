@@ -1,6 +1,9 @@
 # CREST
 Automated CREST runs
 
+Make sure that all the python files are in the same folder. 
+The run the main.py file from the relevant folder where you want the calculations to be done.
+
 We first take the crystal, molecular, nanostructures and then just run the main.py file. 
 1. It first converts the structures into pdb
 2. Then using packmol, it creates pairs of molecules
