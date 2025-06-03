@@ -40,7 +40,7 @@ def main():
         name2 = pair[1].split('.pdb')[0]
         pair_name = name1 + '_' + name2 + '.inp'
         with open(pair_name, 'w') as pf:
-                pf.write('tolerance 2.0' + '\n')
+                pf.write('tolerance 2.1' + '\n')
                 pf.write('filetype pdb' + '\n')
                 pf.write('output ' +  name1 + '_' + name2 + '.pdb' + '\n')
                 pf.write('\n')
