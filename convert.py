@@ -18,7 +18,7 @@ import glob
 def main():
     os.makedirs('xyz_files') # creating the 'xyz_files' folder
     mod = 'module load openbabel/2.4.1;' # loading the Obabel module
-    print('Converting the files to xyz format')
+    print('Converting the files to xyz format. This is the only format that CREST takes')
     for filename in sorted(glob.glob('*.pdb')):
         xyzfilename = filename.split('.')[0] + '.xyz'
         os.system(mod + 'obabel ' + '\'' + filename + '\'' + ' -O ' + '\'' + xyzfilename + '\' >/dev/null 2>&1;') # converting pdb to xyz using obabel
